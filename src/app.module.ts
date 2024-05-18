@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 @Module({
   imports: [
@@ -11,11 +9,10 @@ import { AppService } from './app.service';
       port: 5432,
       username: 'student',
       password: 'student',
-      database: 'nest_project',
+      database: 'kupipodariday',
       entities: [],
       synchronize: true,
     }),
   ],
-});
-
+})
 export class AppModule {}
